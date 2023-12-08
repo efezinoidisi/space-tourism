@@ -96,8 +96,8 @@ function Navlinks({
         key={id}
         href={href}
         className={`flex gap-3 pb-7 items-center ${
-          active && 'md:border-b-2 font-barlow-condensed text-foreground'
-        } hover:border-white/50 hover:border-b-2 text-foreground/50`}
+          active && 'md:border-b-4 font-barlow-condensed text-foreground'
+        } hover:border-white/50 hover:border-b-4 text-foreground/50 transition-all duration-150`}
         onClick={handleClick}
       >
         <span className='font-bold md:hidden lg:inline'>{`0${id}`}</span>

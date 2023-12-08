@@ -25,7 +25,7 @@ export default function Home() {
           explore
         </Link>
         <span
-          className='absolute rounded-[28rem]  bg-foreground opacity-[0.1036] invisible inset-0 peer-hover:visible w-[19.375rem] h-[19.375rem] md:w-[25.125rem] md:h-[25.125rem] lg:w-[27.125rem] lg:h-[27.125rem] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 active:visible'
+          className='absolute rounded-[28rem]  bg-foreground opacity-[0.1036] invisible inset-0 peer-hover:visible w-[19.375rem] h-[19.375rem] md:w-[25.125rem] md:h-[25.125rem] lg:w-[27.125rem] lg:h-[27.125rem] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 active:visible transition-all duration-300'
           aria-hidden={true}
         ></span>
       </div>
