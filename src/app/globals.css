@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground: #ffffff;
+    --background: #0B0D17;
+    --primary: #D0D6F9;
+    --heading1: 9.375rem;
+    --heading2: 6.25rem;
+    --heading3: 3.5rem;
+    --heading4: 2rem;
+    --heading5: 1.75rem;
+    --subheading1: 1.75rem;
+    --subheading2: .875rem;
+    --subheading2-letter-spacing: 0.14763rem;
+  }
+
+  h5 {
+    letter-spacing: 0.29531rem;
+  }
+
+  nav {
+    letter-spacing: 0.16875rem;
+  }
+}
+
+@layer components {}
