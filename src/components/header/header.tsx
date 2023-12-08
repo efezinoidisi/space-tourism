@@ -43,7 +43,7 @@ export default function Header() {
   };
 
   return (
-    <header className='flex justify-between items-center lg:grid lg:place-content-center lg:grid-cols-3 lg:place-items-center absolute top-10 z-10 px-5 md:pl-10  md:pr-0 w-full'>
+    <header className='flex justify-between items-center  absolute top-10 z-10 px-7 md:pl-10 md:pr-0 w-full'>
       <div className='mr-auto col-span-1'>
         <Image
           src={logo}
@@ -110,7 +110,7 @@ function Navlinks({
 
   return (
     <nav
-      className={`font-barlow-condensed md:flex px-5 gap-10 pt-7  lg:relative lg:before:content-[""] lg:before:absolute lg:before:w-1/4 lg:before:h-[0.0625rem] lg:before:top-1/2 lg:before:-translate-y-1/2 lg:before:bg-foreground lg:before:bg-opacity-[0.02] lg:before:-left-36 col-span-2 ${extraStyles}`}
+      className={`font-barlow-condensed md:flex px-5 gap-10 pt-7  lg:relative lg:before:content-[""] lg:before:absolute lg:before:w-1/4 lg:before:h-[0.0625rem] lg:before:top-1/2 lg:before:-translate-y-1/2 lg:before:bg-foreground lg:before:bg-opacity-[0.02] lg:before:-left-[9.5rem] col-span-2 ${extraStyles}`}
     >
       {nav}
     </nav>
