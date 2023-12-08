@@ -1,5 +1,11 @@
 import PageHeading from '@/components/page-heading';
 import Crew from './components/crew';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Space tourism website | Crew',
+  description: 'The crew members',
+};
 
 export default function page() {
   return (

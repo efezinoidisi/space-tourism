@@ -3,6 +3,12 @@ import TextCard from '@/components/card';
 
 import { data } from '@/lib/data';
 import Technology from './components/technology';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Space tourism website | Technology',
+  description: 'The technology page',
+};
 
 export default function page({
   searchParams,

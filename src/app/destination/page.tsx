@@ -1,6 +1,12 @@
 import { data } from '@/lib/data';
 import Planet from './components/planet';
 import PageHeading from '@/components/page-heading';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Space tourism website | Destination',
+  description: 'The different destinations available',
+};
 
 export default function page({
   searchParams,
