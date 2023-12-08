@@ -69,7 +69,7 @@ const MobileNav = ({ toggleMobileMenu }: { toggleMobileMenu: () => void }) => {
   return (
     <div
       className={
-        'fixed right-0 top-0 bottom-0 z-[100] flex flex-col bg-nav backdrop-blur-sl w-4/6 gap-20 pt-10 px-10 md:hidden'
+        'fixed right-0 top-0 bottom-0 z-[1000] flex flex-col bg-nav backdrop-blur-sl w-4/6 gap-20 pt-10 px-10 md:hidden'
       }
     >
       <Button className='self-end' onClick={toggleMobileMenu}>
