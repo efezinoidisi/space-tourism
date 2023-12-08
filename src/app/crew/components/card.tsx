@@ -32,7 +32,7 @@ export default function Card(props: CardProps) {
           <h3 className='text-foreground opacity-50 md:text-2xl lg:text-[2rem] font-bellefair uppercase pb-2'>
             {title}
           </h3>
-          <h4 className='text-foreground uppercase font-bellefair md:text-4xl lg:text-[3.2rem] min-w-fit py-3'>
+          <h4 className='text-foreground uppercase font-bellefair md:text-4xl lg:text-[3.2rem] min-w-max py-3'>
             {name}
           </h4>
           <p className='lg:text-[1.125rem] lg:leading-8'>{description}</p>
