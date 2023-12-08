@@ -37,7 +37,7 @@ export default function PlanetNav() {
             href={href}
             className={`${
               active ? 'border-b-4 text-foreground' : ''
-            } uppercase w-fit transition-colors duration-200 ease-in-out font-barlow-condensed tracking-[0.16875rem] pb-3`}
+            } uppercase w-fit transition-colors duration-200 ease-in-out font-barlow-condensed tracking-[0.16875rem] pb-3 hover:border-b-4 hover:border-foreground/50 hover:opacity-50`}
           >
             {name}
           </Link>

@@ -1,3 +1,4 @@
+import Button from '@/components/button';
 import ImageWrapper from '@/components/image';
 import { StaticImageData } from 'next/image';
 
@@ -40,13 +41,13 @@ export default function Card(props: CardProps) {
           {items.map((_, index) => {
             const active = index === currentIndex;
             return (
-              <span
+              <Button
                 key={index}
                 className={`${
                   active ? 'bg-foreground' : 'bg-gray-400/40'
-                } w-3 h-3 rounded-full cursor-pointer`}
+                } w-3 h-3 rounded-full cursor-pointer hover:bg-foreground hover:opacity-50`}
                 onClick={() => nextIndex(index)}
-              ></span>
+              />
             );
           })}
         </div>

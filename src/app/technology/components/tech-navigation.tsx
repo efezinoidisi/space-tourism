@@ -19,8 +19,10 @@ export default function TechnologyNav() {
             key={tech}
             href={{ pathname: '/technology', query: { tab: tech } }}
             className={`${
-              active ? 'bg-foreground text-background ' : ''
-            } border rounded-full py-3 px-5 transition-colors ease-in-out duration-300 `}
+              active
+                ? 'bg-foreground text-background opacity-100'
+                : 'bg-inherit opacity-50'
+            } border rounded-full py-3 px-5 transition-colors ease-in-out duration-300 hover:opacity-100`}
           >
             {tech}
           </Link>

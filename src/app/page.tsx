@@ -17,10 +17,14 @@ export default function Home() {
         experience!`}
         </p>
       </div>
-      <div className='lg:basis-1/2 lg:self-end flex justify-center'>
-        <Button styles='justify-self-end md:rounded-[15.125rem] lg:rounded-[17.125rem] bg-foreground text-background uppercase w-[9.375rem] h-[9.375rem] rounded-[9.375rem] md:w-[15.125rem] md:h-[15.125rem] lg:w-[17.125rem] lg:h-[17.125rem]  md:text-[2rem] text-xl'>
+      <div className='lg:basis-1/2 lg:self-end flex justify-center relative w-[19.375rem] h-[19.375rem] md:w-[25.125rem] md:h-[25.125rem] lg:w-[27.125rem] lg:h-[27.125rem]'>
+        <Button styles='absolute justify-self-end md:rounded-[15.125rem] lg:rounded-[17.125rem] bg-foreground text-background uppercase rounded-[9.375rem]   md:text-[2rem] text-xl peer w-[9.375rem] h-[9.375rem] md:w-[15.125rem] md:h-[15.125rem] lg:w-[17.125rem] lg:h-[17.125rem] left-1/2 -translate-x-1/2 z-10 top-1/2 -translate-y-1/2'>
           explore
         </Button>
+        <span
+          className='absolute rounded-[28rem]  bg-foreground opacity-[0.1036] invisible inset-0 peer-hover:visible w-[19.375rem] h-[19.375rem] md:w-[25.125rem] md:h-[25.125rem] lg:w-[27.125rem] lg:h-[27.125rem] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 active:visible'
+          aria-hidden={true}
+        ></span>
       </div>
     </main>
   );

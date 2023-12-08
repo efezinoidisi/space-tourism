@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes } from 'react';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   styles?: string;
 };
 export default function Button(props: ButtonProps) {

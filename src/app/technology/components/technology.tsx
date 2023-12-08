@@ -32,13 +32,12 @@ export default function Technology(props: TechnologyProps) {
           heading='the terminology...'
           subheading={name}
           paragraph={description}
-          subheadingStyles='text-foreground uppercase font-bellefair text-2xl md:text-[2.5rem] lg:text-[3.5rem]'
+          subheadingStyles='text-foreground uppercase font-bellefair text-2xl md:text-[2.5rem] min-w-max lg:text-[3.5rem]'
           headingStyles='uppercase tracking-[0.14763rem] font-barlow-condensed text-[0.875rem] md:text-base md:tracking-[0.16875rem]'
           wrapperStyles='flex flex-col justify-center items-center gap-3 px-5 md:px-36 md:gap-5 lg:items-start lg:px-3'
           paragraphStyles='text-center text-[0.9375rem] leading-6 md:leading-7 md:text-base lg:text-left lg:text-lg lg:leading-8 lg:pr-20'
         />
       </div>
-      <p className=''></p>
     </section>
   );
 }
