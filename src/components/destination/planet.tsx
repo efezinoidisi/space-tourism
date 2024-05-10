@@ -17,14 +17,14 @@ export default function Planet(props: PlanetProps) {
     <section className="flex flex-col lg:grid lg:grid-cols-2 lg:place-items-center mt-14 lg:mt-2">
       <ImageWrapper
         src={image}
-        className="w-64 self-center md:w-[25rem] animate-infinte-rotate"
+        className="w-64 self-center md:w-[25rem] animate-infinte-rotate perspective-1000 perspective-origin-center"
       />
-      <div className="flex flex-col mt-14 gap-5">
+      <div className="flex flex-col mt-14 gap-5 animate-fade-in">
         <Suspense fallback={<p>loading</p>}>
           <PlanetNav />
         </Suspense>
         <div className="flex flex-col items-center justify-center gap-1 lg:items-start lg:justify-start">
-          <h3 className="uppercase font-bellefair text-[3.5rem]  md:text-[5rem] lg:text-[6.25rem] text-foreground">
+          <h3 className="uppercase font-bellefair text-[3.5rem]  md:text-[5rem] lg:text-[6.25rem] text-foreground ">
             {name}
           </h3>
           <p className="text-[0.93rem] leading-6 lg:text-lg lg:leading-8 text-center px-5 md:leading-7 md:text-base md:px-16 lg:text-left lg:px-0 lg:pr-10">

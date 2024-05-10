@@ -58,13 +58,45 @@ const config: Config = {
             rotate: "360deg",
           },
         },
+
+        "fade-in": {
+          from: {
+            scale: "0.6",
+            opacity: "0.3",
+          },
+          to: {
+            scale: "1",
+            opacity: "1",
+          },
+        },
+
+        "slide-in": {
+          from: {
+            translate: "30% 0",
+            opacity: "0",
+          },
+
+          to: {
+            translate: "0",
+            opacity: "1",
+          },
+        },
+
+        "pulse-2": {
+          "50%": {
+            opacity: "0.18",
+          },
+        },
       },
 
       animation: {
         "infinte-rotate": "infinite-rotate 10s infinite linear",
+        "fade-in": "fade-in 600ms linear",
+        "slide-in": "slide-in 700ms ease-in-out",
+        pulse2: "pulse-2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-3d")({ legacy: true })],
 };
 export default config;
