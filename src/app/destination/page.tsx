@@ -1,11 +1,11 @@
-import { data } from '@/lib/data';
-import Planet from './components/planet';
-import PageHeading from '@/components/page-heading';
-import { Metadata } from 'next';
+import Planet from "@/components/destination/planet";
+import PageHeading from "@/components/page-heading";
+import { data } from "@/lib/data";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Space tourism website | Destination',
-  description: 'The different destinations available',
+  title: "Space tourism website | Destination",
+  description: "The different destinations available",
 };
 
 export default function page({
@@ -26,8 +26,8 @@ export default function page({
   const planet = data.destinations[activeTab];
 
   return (
-    <main className='flex flex-col bg-destination-mobile bg-no-repeat bg-cover md:bg-destination-tablet lg:bg-destination-desktop bg-background min-h-screen mix-blend-screen  pb-10 pt-36 px-5 md:pl-10'>
-      <PageHeading num={1} text={'pick your destination'} />
+    <main className="flex flex-col bg-destination-mobile bg-no-repeat bg-cover md:bg-destination-tablet lg:bg-destination-desktop bg-background min-h-screen mix-blend-screen  pb-10 pt-36 px-5 md:pl-10">
+      <PageHeading num={1} text={"pick your destination"} />
 
       <Planet
         name={planet.name}
